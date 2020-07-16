@@ -1,0 +1,15 @@
+.top40-banner {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.top40-brand  {
+  max-width: 25%;
+  height: auto;
+  cursor: pointer;
+}
+
+.top40-brand:hover {
+  opacity: 0.7;
+}
