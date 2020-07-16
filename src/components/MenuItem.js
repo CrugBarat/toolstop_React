@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import getImage from '../utils/defaultImgMap.js';
-import './Components.css';
+import './MenuItem.css';
 
 const MenuItem = (props) => {
   if(!props.image) return null;
