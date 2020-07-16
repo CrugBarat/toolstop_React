@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import MenuList from '../components/MenuList.js';
+import MenuList from '../components/top40/MenuList.js';
 import Top40ImageData from '../config/Top40ImageData.js';
 import './Views.css';
 

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import getImage from '../utils/defaultImgMap.js';
+import getImage from '../../utils/defaultImgMap.js';
 import './MenuItem.css';
 
 const MenuItem = (props) => {
