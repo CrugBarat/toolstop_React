@@ -4,7 +4,7 @@ import Header from '../components/header/Header.js'
 export default function Home() {
   return (
     <Fragment>
-      <Header/>
+      <Header />
     </Fragment>
   )
 }

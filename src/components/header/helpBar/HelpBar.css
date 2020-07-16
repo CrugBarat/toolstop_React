@@ -1,0 +1,53 @@
+.help-bar-wrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1f397f;
+}
+
+.help-bar-content {
+  width: 100%;
+  color: #1f397f;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-weight: 600;
+  float: left;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 91.71429rem;
+  padding: 0 1.5rem;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.help-bar-number {
+  float: left;
+}
+
+.help-bar-quicklinks {
+  float: right;
+  margin-right: 60px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.quick-links {
+  padding: 0 7px;
+}
