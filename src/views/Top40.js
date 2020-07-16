@@ -7,7 +7,7 @@ export default function Top40() {
   return (
     <Fragment>
       <div className="top40-container">
-        <h1 className="top40-title">Top 40</h1>
+        <p className="top40-title">Top 40</p>
         <MenuList images={Top40ImageData}/>
       </div>
     </Fragment>

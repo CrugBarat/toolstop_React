@@ -1,13 +1,23 @@
 .top40-title {
-  width:100%;
-  font-family: "Open Sans", 'Arial', 'Helvetica', sans-serif;
+  width: 100%;
+  font-family: 'Open Sans','Arial', 'Helvetica', sans-serif;
   color: #444444;
   font-size: 28px;
   margin: 2.28571rem 0rem .78571rem 0rem;
+  font-weight: 600;
 }
 
 .top40-container {
   display: inline-block;
   width: 80%;
-  margin: 0px 120px 0px 120px;
+  margin: 0 9.133% 0 9.133%;
+}
+
+@media only screen and (max-width: 540px) {
+  .top40-container {
+    width: 90%;
+    margin: auto;
+    padding: 0 21px 0 21px;
+    max-width: 91.71429rem;
+  }
 }
