@@ -1,9 +1,11 @@
 import React, {Fragment} from 'react';
+import MenuList from '../components/MenuList.js';
+import Top40ImageData from '../config/Top40ImageData.js';
 
 export default function Top40() {
   return (
     <Fragment>
-      <p>HELLO TOP 40</p>
+      <MenuList images={Top40ImageData}/>
     </Fragment>
   )
 }
