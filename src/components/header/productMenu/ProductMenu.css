@@ -1,0 +1,29 @@
+.product-menu-container {
+  background-color: #1f397f;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  overflow: auto;
+}
+
+.product-menu {
+  padding: 0 21px 0 21px;
+  width: 96.5%;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.product-link {
+  color: white;
+  padding: 1.25rem;
+  transition: 0.3s;
+}
+
+.product-link:hover {
+  background-color: #e1e1e1;
+  color: #d51d29;
+}
