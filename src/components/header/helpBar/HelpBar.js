@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import './HelpBar.css';
 
-const HelpBar = (props) => {
+const HelpBar = () => {
   return (
     <Fragment>
       <div className="help-bar-container">

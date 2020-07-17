@@ -5,7 +5,7 @@ import SearchBar from './searchBar/SearchBar.js';
 import ProductMenu from './productMenu/ProductMenu.js';
 import './Header.css';
 
-const Header = (props) => {
+const Header = () => {
   return (
     <Fragment>
     <div className="header-fixed">

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import './Klarna.css';
 
-const Klarna = (props) => {
+const Klarna = () => {
   return (
     <Fragment>
       <a className="klarna-link" href="https://www.toolstop.co.uk/tools-on-finance">

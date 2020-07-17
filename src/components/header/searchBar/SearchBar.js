@@ -3,7 +3,7 @@ import signin from '../../../assets/images/signin.png';
 import basket from '../../../assets/images/basket.png';
 import './SearchBar.css';
 
-const SearchBar = (props) => {
+const SearchBar = () => {
   return (
     <Fragment>
       <div className="search-bar-menu-container">
