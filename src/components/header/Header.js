@@ -3,6 +3,7 @@ import HelpBar from './helpBar/HelpBar.js';
 import Klarna from './klarna/Klarna.js';
 import SearchBar from './searchBar/SearchBar.js';
 import ProductMenu from './productMenu/ProductMenu.js';
+import InfoBar from './infoBar/InfoBar.js';
 import './Header.css';
 
 const Header = () => {
@@ -17,6 +18,7 @@ const Header = () => {
             <ProductMenu />
           </div>
         </div>
+        <InfoBar />
       </div>
     </Fragment>
   )
