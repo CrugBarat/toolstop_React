@@ -27,3 +27,10 @@
   background-color: #e1e1e1;
   color: #d51d29;
 }
+
+
+@media only screen and (max-width: 830px) {
+  .product-menu-container {
+    display: none;
+  }
+}
