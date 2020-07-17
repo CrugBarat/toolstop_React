@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 20px;
+
 }
 
 .search-bar {
@@ -28,12 +29,20 @@
 
 .user-container {
   text-align: right;
+  padding: 0px 21px;
+}
+
+.toolstop-logo-container {
+  height: 58px;
 }
 
 .sign-in-container, .user-basket-container {
-  padding: 14px 11px;
-  height: auto;
   float: right;
+  padding: 7.5px 10px;
+}
+
+.user-basket-container {
+  padding-right: 14px;
 }
 
 .sign-in-text {
