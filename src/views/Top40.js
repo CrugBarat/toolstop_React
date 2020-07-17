@@ -9,8 +9,10 @@ export default function Top40() {
     <Fragment>
       <Header />
       <div className="top40-container">
-        <p className="top40-title">Top 40</p>
-        <MenuList images={Top40ImageData} />
+        <div className="top40">
+          <p className="top40-title">Top 40</p>
+          <MenuList images={Top40ImageData} />
+        </div>
       </div>
     </Fragment>
   )
