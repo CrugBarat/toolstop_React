@@ -1,25 +1,21 @@
-.menu-usps {
+.klarna-container {
   background-color: #ffb3c7;
-  background-size: 100%;
+  width: 100%;
   color: black;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  padding: 5px;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -ms-flexbox;
   display: flex;
 }
 
+.klarna {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
 .inline-klarna {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -38,7 +34,6 @@
   margin-left: 2px;
   margin-right: 8px;
   height: 35px;
-  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -48,7 +43,6 @@
   font-weight: 600;
   text-decoration: underline;
 }
-
 
 @media only screen and (max-width: 550px) {
   .menu-usps {

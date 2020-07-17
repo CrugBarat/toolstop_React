@@ -1,9 +1,14 @@
 .help-bar-container {
-  grid-template-columns: 1fr 2fr;
-  display: grid;
   width: 100%;
   height: auto;
   background-color: #eff0f5;
+}
+
+.help-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  display: grid;
   padding: 10px 0px 10px 0px;
   color: #1f397f;
   font-weight: 600;
