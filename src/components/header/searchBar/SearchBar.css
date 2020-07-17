@@ -1,0 +1,102 @@
+.search-bar-menu-container {
+  background-color: white;
+  padding: 20px 0px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+}
+
+.search-bar {
+  border: solid 2px #8592b3;
+  width: 335px;
+  padding: 18px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #1f397f;
+  font-family: 'Open Sans','Arial', 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-container {
+  text-align: right;
+}
+
+.sign-in-container, .user-basket-container {
+  padding: 14px 11px;
+  height: auto;
+  float: right;
+}
+
+.sign-in-text {
+  color: #1f397f;
+  font-family: 'Open Sans','Arial', 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  float: left;
+  line-height: 40px;
+}
+
+.signin-logo {
+  float: left;
+  margin: 0px 0px 0px 5px;
+}
+
+@media only screen and (max-width: 1260px) {
+  .search-bar-menu-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .search-bar {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .search-bar-menu-container {
+    text-align: left;
+    grid-template-columns: 1fr 2fr;
+    padding: 0px;
+  }
+  .search-bar-container {
+    display: none;
+  }
+  .toolstop-logo-container {
+    width: 30%;
+  }
+  .toolstop-logo {
+    max-height: 2.35714rem;
+    padding: 11px 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .toolstop-logo {
+    width: 150px;
+    padding-left: 20px;
+  }
+  .sign-in-container, .user-basket-container {
+    padding: 5px 11px 0px 11px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .sign-in-text {
+    display: none;
+  }
+  .search-bar-menu-container {
+    grid-gap: 5px;
+  }
+  .sign-in-container, .user-basket-container {
+    padding: 5px 5px 0px 5px;
+  }
+}
