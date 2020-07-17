@@ -7,6 +7,8 @@ import makita20 from '../assets/images/top-20-logos-makita-1.png';
 import metabo20 from '../assets/images/top-20-logos-metabo-1.png';
 import stanley20 from '../assets/images/top-20-logos-stanley-1.png';
 import top40 from '../assets/images/top-40-banner.png';
+import signin from '../assets/images/signin.png';
+import basket from '../assets/images/basket.png';
 import truck from '../assets/images/truck.png';
 import calendar from '../assets/images/calendar.png';
 import percent from '../assets/images/percent.png';
@@ -25,7 +27,9 @@ let imgs = {
     truck,
     calendar,
     percent,
-    parcel
+    parcel,
+    signin,
+    basket
 };
 
 function getImage(key) {

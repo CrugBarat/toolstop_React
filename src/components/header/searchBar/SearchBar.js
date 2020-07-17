@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
-import signin from '../../../assets/images/signin.png';
-import basket from '../../../assets/images/basket.png';
+import getImage from '../../../utils/defaultImgMap.js';
+
 import './SearchBar.css';
 
 const SearchBar = () => {
@@ -18,13 +18,13 @@ const SearchBar = () => {
         <div className="user-container">
         <a href="https://www.toolstop.co.uk/">
           <div className="user-basket-container">
-            <img className="user-basket" src={basket} alt="Shopping Basket"/>
+            <img className="user-basket" src={getImage("basket")} alt="Shopping Basket"/>
           </div>
         </a>
           <a href="https://www.toolstop.co.uk/login.php">
             <div className="sign-in-container">
               <p className="sign-in-text">Sign in</p>
-              <img className="signin-logo" src={signin} alt="Sign in logo"/>
+              <img className="signin-logo" src={getImage("signin")} alt="Sign in logo"/>
             </div>
           </a>
         </div>
