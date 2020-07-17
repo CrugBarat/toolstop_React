@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import HelpBar from './helpBar/HelpBar.js';
 import Klarna from './klarna/Klarna.js';
 import SearchBar from './searchBar/SearchBar.js';
+import ProductMenu from './productMenu/ProductMenu.js';
 import './Header.css';
 
 const Header = (props) => {
@@ -13,6 +14,7 @@ const Header = (props) => {
         <div className="header-container">
           <div className="header">
             <SearchBar />
+            <ProductMenu />
           </div>
         </div>
       </div>
