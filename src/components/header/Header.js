@@ -7,11 +7,13 @@ import './Header.css';
 const Header = (props) => {
   return (
     <Fragment>
-      <HelpBar />
-      <Klarna />
-      <div className="header-container">
-        <div className="header">
-          <SearchBar />
+    <div className="header-fixed">
+        <HelpBar />
+        <Klarna />
+        <div className="header-container">
+          <div className="header">
+            <SearchBar />
+          </div>
         </div>
       </div>
     </Fragment>
