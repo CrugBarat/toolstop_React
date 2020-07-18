@@ -1,3 +1,8 @@
+.menu-list-container {
+  display: inline-block;
+  width: 80%;
+}
+
 .top40-banner {
   width: 100%;
   height: auto;

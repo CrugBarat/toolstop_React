@@ -13,6 +13,7 @@ import truck from '../assets/images/truck.png';
 import calendar from '../assets/images/calendar.png';
 import percent from '../assets/images/percent.png';
 import parcel from '../assets/images/parcel.png';
+import arrow from '../assets/images/arrow.png';
 
 let imgs = {
     bahco20,
@@ -29,7 +30,8 @@ let imgs = {
     percent,
     parcel,
     signin,
-    basket
+    basket,
+    arrow
 };
 
 function getImage(key) {

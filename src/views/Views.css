@@ -11,12 +11,6 @@
   margin: 0 auto;
 }
 
-.top40 {
-  display: inline-block;
-  width: 80%;
-  margin: 0 9.133% 0 9.133%;
-}
-
 @media only screen and (max-width: 800px) {
   .top40-container {
     padding-top: 130px;
