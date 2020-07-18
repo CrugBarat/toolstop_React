@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Toolstop
 
-## Available Scripts
+A 3 day coding challenge assigned to me by Toolstop while applying for a job with them.
 
-In the project directory, you can run:
+**Programming Language**: JavaScript
 
-### `yarn start`
+**Web App Framework**: React
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Markup/Styling**: HTML5/CSS3
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+# Brief
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Stage 1 - Top 40 landing page**:
 
-### `yarn build`
+We have set up two Top 40 endpoints on our server for you to use (see assets sheet). Use these
+endpoints to fetch the Top 40 sellers on the Toolstop site, use the fetched data to build a fully
+React page displaying the brand categories (asset sheet image 1). This page should be desktop
+and mobile friendly.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Stage 2 - Category page**:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Currently, the Toolstop site is only partially built using React, we are looking to refactor existing
+pages into fully React components. One of the main pages we are looking to refactor is the
+category page (asset sheet image 2). Build this page to be desktop friendly, don’t worry about
+mobile. It should display all relevant information similar to what the current category pages display.
+When clicking on a product it should link through to the correct product on the existing
+Toolstop.co.uk site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Stage 3 - Hosting your site**:
 
-### `yarn eject`
+At Toolstop developers are expected to handle everything from CSS to DevOps, once you are
+happy with your site, host it on whatever platform you wish.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Download the files
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Navigate to project folder and run:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+npm i
+```
+```
+npm start
+```
