@@ -10,10 +10,11 @@ const List = ({images}) => {
   const [hideProductItem, setHideProductItem] = useState(true);
   const [topData, setTopData] = useState();
   const [brand, setBrand] = useState("");
+  const [fetchTrigger, setFetchTrigger] = useState(false);
 
   useEffect(() => {
     fetchData();
-  }, [brand]);
+  }, [brand, fetchTrigger]);
 
   async function fetchData() {
     const res = await fetch("https://product-fetch-toolstop.herokuapp.com/top40" + brand);
@@ -25,6 +26,15 @@ const List = ({images}) => {
     setHideTop40(true);
     setHideProductItem(false);
     setBrand(brand);
+    triggerFetch();
+  }
+
+  function triggerFetch() {
+    if (!fetchTrigger) {
+      setFetchTrigger(true);
+    } else {
+      setFetchTrigger(false);
+    }
   }
 
   function toggleProductList() {
