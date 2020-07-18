@@ -31,4 +31,7 @@
   .top40-brand  {
     opacity: 1;
   }
+  .menu-list-container {
+    width: 95%;
+  }
 }

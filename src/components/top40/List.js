@@ -8,7 +8,6 @@ import './productItem/ProductItem.css';
 const List = ({images}) => {
 
   const [hideTop40, setHideTop40] = useState(false);
-  const [hideProductItem, setHideProductItem] = useState(true);
   const [topData, setTopData] = useState();
   const [brand, setBrand] = useState("");
   const [fetchTrigger, setFetchTrigger] = useState(false);
@@ -27,7 +26,6 @@ const List = ({images}) => {
     setTopData(null);
     setLoading(true);
     setHideTop40(true);
-    setHideProductItem(false);
     setBrand(brand);
     triggerFetch();
   }
@@ -42,13 +40,12 @@ const List = ({images}) => {
 
   function toggleProductList() {
     setHideTop40(false);
-    setHideProductItem(true);
   }
 
   const menuItem = images.sort(function(a, b) {
     return a.priority - b.priority;
   }).map((image, index) => {
-    if (hideTop40) return;
+    if (hideTop40) return null;
     return <MenuItem image={image} key={index} onClick={handleClick} />
   });
 
