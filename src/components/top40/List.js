@@ -1,6 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import MenuItem from './menuItem/MenuItem.js';
 import ProductItem from './productItem/ProductItem.js';
+import Loading from './loadingSpinner/Loading.js';
 import getImage from '../../utils/defaultImgMap.js';
 import './productItem/ProductItem.css';
 
@@ -11,6 +12,7 @@ const List = ({images}) => {
   const [topData, setTopData] = useState();
   const [brand, setBrand] = useState("");
   const [fetchTrigger, setFetchTrigger] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchData();
@@ -18,11 +20,12 @@ const List = ({images}) => {
 
   async function fetchData() {
     const res = await fetch("https://product-fetch-toolstop.herokuapp.com/top40" + brand);
-     res.json().then(data => setTopData(data.data)).catch(err => console.err);
+     res.json().then(data => setTopData(data.data)).then(setLoading(false)).catch(err => console.err);
   }
 
   function handleClick(brand) {
     setTopData(null);
+    setLoading(true);
     setHideTop40(true);
     setHideProductItem(false);
     setBrand(brand);
@@ -68,7 +71,7 @@ const List = ({images}) => {
               <img className="back-image" src={getImage("arrow")} alt=""/>
               <p className="back-text">Back</p>
             </div>
-              {productItem}
+              {loading ? <Loading /> : productItem}
           </div>
         </div>
     </Fragment>
