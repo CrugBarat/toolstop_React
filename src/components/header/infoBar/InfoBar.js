@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import './InfoBar.css';
 import getImage from '../../../utils/defaultImgMap.js';
 
-
 const InfoBar = () => {
   return (
     <Fragment>
