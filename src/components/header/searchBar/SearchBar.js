@@ -5,7 +5,7 @@ import './SearchBar.css';
 
 const SearchBar = () => {
 
-  const [url, setUrl] = useState("https://www.toolstop.co.uk/search.php?search_query=");
+  const [url] = useState("https://www.toolstop.co.uk/search.php?search_query=");
   const [value, setValue] = useState("");
 
   function handleChange(e){

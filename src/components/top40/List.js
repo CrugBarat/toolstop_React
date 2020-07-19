@@ -11,7 +11,6 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
   const [hideMenuList, setMenuList] = useState(hideMenu);
   const [fetchApi] = useState(api);
   const [topData, setTopData] = useState();
-  const [searchData, setSearchData] = useState();
   const [brand, setBrand] = useState("");
   const [fetchTrigger, setFetchTrigger] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -36,18 +35,14 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
 
   function handleSearch(value) {
     let newSearch =  topData.filter((data) => {
-      if(data.name.toLowerCase().includes(value.toLowerCase())) {
-        return data;
-      }
+      if(data.name.toLowerCase().includes(value.toLowerCase())) return data;
     });
     setTopData(newSearch);
   }
 
   function handlePriceFilter(min, max) {
     let newSearch =  topData.filter((data) => {
-      if(data.price*1.20 >= min && data.price*1.20 <= max) {
-        return data;
-      }
+      if(data.price*1.20 >= min && data.price*1.20 <= max) return data;
     });
     setTopData(newSearch);
   }
