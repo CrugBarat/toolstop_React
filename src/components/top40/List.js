@@ -12,7 +12,7 @@ const List = ({images, hideMenu, api}) => {
   const [topData, setTopData] = useState();
   const [brand, setBrand] = useState("");
   const [fetchTrigger, setFetchTrigger] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchData();
