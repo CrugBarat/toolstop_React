@@ -5,9 +5,10 @@ import Loading from './loadingSpinner/Loading.js';
 import getImage from '../../utils/defaultImgMap.js';
 import './productItem/ProductItem.css';
 
-const List = ({images}) => {
+const List = ({images, hideMenu, api}) => {
 
-  const [hideTop40, setHideTop40] = useState(false);
+  const [hideMenuList, setMenuList] = useState(hideMenu);
+  const [fetchApi] = useState(api);
   const [topData, setTopData] = useState();
   const [brand, setBrand] = useState("");
   const [fetchTrigger, setFetchTrigger] = useState(false);
@@ -18,14 +19,14 @@ const List = ({images}) => {
   }, [brand, fetchTrigger]);
 
   async function fetchData() {
-    const res = await fetch("https://product-fetch-toolstop.herokuapp.com/top40" + brand);
+    const res = await fetch(fetchApi + brand);
      res.json().then(data => setTopData(data.data)).then(setLoading(false)).catch(err => console.err);
   }
 
   function handleClick(brand) {
     setTopData(null);
     setLoading(true);
-    setHideTop40(true);
+    setMenuList(true);
     setBrand(brand);
     triggerFetch();
   }
@@ -39,23 +40,23 @@ const List = ({images}) => {
   }
 
   function toggleProductList() {
-    setHideTop40(false);
+    setMenuList(false);
   }
 
   const menuItem = images.sort(function(a, b) {
     return a.priority - b.priority;
   }).map((image, index) => {
-    if (hideTop40) return null;
+    if (hideMenuList) return null;
     return <MenuItem image={image} key={index} onClick={handleClick} />
   });
 
-  if (topData && hideTop40) {
+  if (topData && hideMenuList) {
     var productItem = topData.map((product, index) => {
        return <ProductItem product={product} key={index} />
      });
   }
 
-  if (hideTop40) {
+  if (hideMenuList) {
     var backButton =
     <div className="product-list-back" onClick={toggleProductList}>
       <img className="back-image" src={getImage("arrow")} alt=""/>
