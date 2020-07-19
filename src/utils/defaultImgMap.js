@@ -16,6 +16,8 @@ import parcel from '../assets/images/parcel.png';
 import arrow from '../assets/images/arrow.png';
 import weekend from '../assets/images/weekend.png';
 import github from '../assets/images/github.png';
+import top40Link from '../assets/images/top40Link.png';
+import newProduct from '../assets/images/newProduct.png';
 
 let imgs = {
     bahco20,
@@ -35,7 +37,9 @@ let imgs = {
     basket,
     arrow,
     weekend,
-    github
+    github,
+    top40Link,
+    newProduct
 };
 
 function getImage(key) {
