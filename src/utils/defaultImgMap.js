@@ -18,6 +18,15 @@ import weekend from '../assets/images/weekend.png';
 import github from '../assets/images/github.png';
 import top40Link from '../assets/images/top40Link.png';
 import newProduct from '../assets/images/newProduct.png';
+import top40Title from '../assets/images/top40Title.png';
+import makita from '../assets/images/makitaTitle.png';
+import dewalt from '../assets/images/dewaltTitle.png';
+import hikoki from '../assets/images/hikokiTitle.png';
+import bosch from '../assets/images/boschTitle.png';
+import bahco from '../assets/images/bahcoTitle.png';
+import metabo from '../assets/images/metaboTitle.png';
+import stanley from '../assets/images/stanleyTitle.png';
+import evolution from '../assets/images/evolutionTitle.png';
 
 let imgs = {
     bahco20,
@@ -39,7 +48,16 @@ let imgs = {
     weekend,
     github,
     top40Link,
-    newProduct
+    newProduct,
+    top40Title,
+    makita,
+    dewalt,
+    hikoki,
+    bosch,
+    bahco,
+    metabo,
+    stanley,
+    evolution
 };
 
 function getImage(key) {

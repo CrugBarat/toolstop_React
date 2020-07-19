@@ -5,7 +5,7 @@ import Loading from './loadingSpinner/Loading.js';
 import getImage from '../../utils/defaultImgMap.js';
 import './productItem/ProductItem.css';
 
-const List = ({images, hideMenu, api}) => {
+const List = ({images, hideMenu, api, handleTitleImage}) => {
 
   const [hideMenuList, setMenuList] = useState(hideMenu);
   const [fetchApi] = useState(api);
@@ -29,6 +29,7 @@ const List = ({images, hideMenu, api}) => {
     setMenuList(true);
     setBrand(brand);
     triggerFetch();
+    handleTitleImage(brand);
   }
 
   function triggerFetch() {
@@ -41,6 +42,7 @@ const List = ({images, hideMenu, api}) => {
 
   function toggleProductList() {
     setMenuList(false);
+    handleTitleImage("");
   }
 
   const menuItem = images.sort(function(a, b) {
