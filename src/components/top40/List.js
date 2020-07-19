@@ -40,7 +40,15 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
         return data;
       }
     });
-    console.log(newSearch);
+    setTopData(newSearch);
+  }
+
+  function handlePriceFilter(min, max) {
+    let newSearch =  topData.filter((data) => {
+      if(data.price*1.20 >= min && data.price*1.20 <= max) {
+        return data;
+      }
+    });
     setTopData(newSearch);
   }
 
@@ -85,7 +93,7 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
 
   if (hideMenuList) {
     var filterBar =
-    <FilterBar getSearch={handleSearch} handleClick={handleReset}/>
+    <FilterBar getSearch={handleSearch} handlePriceFilter={handlePriceFilter} handleClick={handleReset}/>
   }
 
   if (topData && topData.length < 1) {

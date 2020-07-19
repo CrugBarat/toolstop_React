@@ -4,14 +4,21 @@
 }
 
 .filter-bar-container {
-  width: 100%;
+  display: inline-block;
+  width: 80%;
   overflow: hidden;
   background-color: white;
   padding: 10px 0;
   margin: 0 0 20px 0px;
 }
 
-.product-search-container {
+.filter-bar-title {
+  color: #1f397f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-search-container, .price-filter-container {
   width: 50%;
   float: left;
 }
@@ -30,10 +37,47 @@
 button {
   background-color: #1f397f;
   color: white;
-  margin: 0px 5px;
+  margin: 0px 0px 0px 5px;
 }
 
 button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.price-filter-label {
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.price-filter-imput {
+  width: 10%;
+}
+
+
+@media only screen and (max-width: 951px) {
+  .product-search-container, .price-filter-container {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .filter-bar-container {
+    width: 100%;
+  }
+  .product-search-input{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  button {
+    font-size: 10px;
+    margin: 0px;
+  }
+  .price-filter-label {
+    font-size: 12px;
+    margin: 0 2px;;
+  }
 }
