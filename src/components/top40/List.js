@@ -55,6 +55,14 @@ const List = ({images}) => {
      });
   }
 
+  if (hideTop40) {
+    var backButton =
+    <div className="product-list-back" onClick={toggleProductList}>
+      <img className="back-image" src={getImage("arrow")} alt=""/>
+      <p className="back-text">Back</p>
+    </div>
+  }
+
   return(
     <Fragment>
       <div>
@@ -64,11 +72,8 @@ const List = ({images}) => {
       </div>
         <div>
           <div className="product-list-container">
-            <div className="product-list-back" onClick={toggleProductList}>
-              <img className="back-image" src={getImage("arrow")} alt=""/>
-              <p className="back-text">Back</p>
-            </div>
-              {loading ? <Loading /> : productItem}
+            {backButton}
+            {loading ? <Loading /> : productItem}
           </div>
         </div>
     </Fragment>
