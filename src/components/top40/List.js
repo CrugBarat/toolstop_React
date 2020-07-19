@@ -71,14 +71,14 @@ const List = ({images, hideMenu, api}) => {
           {menuItem}
         </div>
       </div>
-        <div>
-          {loading ? <Loading /> :
-            <div className="product-list-container">
-              {backButton}
-              {productItem}
-            </div>
-          }
-        </div>
+      <div>
+        {loading ? <Loading /> :
+          <div className="product-list-container">
+            {backButton}
+            {productItem}
+          </div>
+        }
+      </div>
     </Fragment>
   )
 
