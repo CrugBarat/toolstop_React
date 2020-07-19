@@ -31,7 +31,7 @@ const Footer = () => {
               <h5 className="footer-section-heading">Opening Hours</h5>
               <ul className="footer-section-list">
                 <li>
-                  <a href="#">Monday - Friday 8am - 5pm</a>
+                  <a href="/">Monday - Friday 8am - 5pm</a>
                 </li>
               </ul>
             </div>
@@ -84,8 +84,8 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <div className="footer-sub-section">
-              <h5 class="footer-section-heading">Delivery</h5>
-              <ul class="footer-section-list">
+              <h5 className="footer-section-heading">Delivery</h5>
+              <ul className="footer-section-list">
                 <li>
                   <a href="https://www.toolstop.co.uk/track-your-order/">Track your order</a>
                 </li>
@@ -98,8 +98,8 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-sub-section">
-              <h5 class="footer-section-heading">Finance</h5>
-              <ul class="footer-section-list">
+              <h5 className="footer-section-heading">Finance</h5>
+              <ul className="footer-section-list">
                 <li>
                   <a href="https://www.toolstop.co.uk/finance/">Finance options</a>
                 </li>
