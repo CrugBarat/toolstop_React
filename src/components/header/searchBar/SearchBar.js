@@ -1,9 +1,17 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import getImage from '../../../utils/defaultImgMap.js';
 
 import './SearchBar.css';
 
 const SearchBar = () => {
+
+  const [url, setUrl] = useState("https://www.toolstop.co.uk/search.php?search_query=");
+  const [value, setValue] = useState("");
+
+  function handleChange(e){
+    setValue(e.target.value);
+  }
+
   return (
     <Fragment>
       <div className="search-bar-menu-container">
@@ -13,7 +21,9 @@ const SearchBar = () => {
             </a>
         </div>
         <div className="search-bar-container">
-          <input className="search-bar" type="text" placeholder="Search product or brand..."/>
+          <form action={url + value} method="post">
+            <input className="search-bar" type="text" placeholder="Search product or brand..." onChange={handleChange}/>
+          </form>
         </div>
         <div className="user-container">
         <a href="https://www.toolstop.co.uk/">
