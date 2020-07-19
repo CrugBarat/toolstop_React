@@ -2,6 +2,7 @@ import React, {Fragment, useState, useEffect} from 'react';
 import MenuItem from './menuItem/MenuItem.js';
 import ProductItem from './productItem/ProductItem.js';
 import Loading from './loadingSpinner/Loading.js';
+import FilterBar from './filterBar/FilterBar.js';
 import getImage from '../../utils/defaultImgMap.js';
 import './productItem/ProductItem.css';
 
@@ -10,6 +11,7 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
   const [hideMenuList, setMenuList] = useState(hideMenu);
   const [fetchApi] = useState(api);
   const [topData, setTopData] = useState();
+  const [searchData, setSearchData] = useState();
   const [brand, setBrand] = useState("");
   const [fetchTrigger, setFetchTrigger] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -30,6 +32,21 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
     setBrand(brand);
     triggerFetch();
     handleTitleImage(brand);
+  }
+
+  function handleSearch(value) {
+    let newSearch =  topData.filter((data) => {
+      if(data.name.toLowerCase().includes(value.toLowerCase())) {
+        return data;
+      }
+    });
+    console.log(newSearch);
+    setTopData(newSearch);
+  }
+
+  function handleReset() {
+    setLoading(true);
+    triggerFetch();
   }
 
   function triggerFetch() {
@@ -66,6 +83,16 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
     </div>
   }
 
+  if (hideMenuList) {
+    var filterBar =
+    <FilterBar getSearch={handleSearch} handleClick={handleReset}/>
+  }
+
+  if (topData && topData.length < 1) {
+    var resultErr =
+    <p className="result-err">No results</p>
+  }
+
   return(
     <Fragment>
       <div>
@@ -75,9 +102,13 @@ const List = ({images, hideMenu, api, handleTitleImage}) => {
       </div>
       <div>
         {loading ? <Loading /> :
-          <div className="product-list-container">
-            {backButton}
-            {productItem}
+          <div>
+              {filterBar}
+              {resultErr}
+            <div className="product-list-container">
+              {backButton}
+              {productItem}
+            </div>
           </div>
         }
       </div>

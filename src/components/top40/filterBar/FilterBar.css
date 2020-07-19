@@ -1,0 +1,39 @@
+.result-err {
+  font-size: 16px;
+  margin: 20px;
+}
+
+.filter-bar-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 0;
+  margin: 0 0 20px 0px;
+}
+
+.product-search-container {
+  width: 50%;
+  float: left;
+}
+
+.product-search-input{
+  color: black;
+  font-size: 14px;
+  width: 50%;
+}
+
+.product-search-input::placeholder {
+  color: black;
+  font-size: 14px;
+}
+
+button {
+  background-color: #1f397f;
+  color: white;
+  margin: 0px 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
