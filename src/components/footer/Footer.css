@@ -1,0 +1,83 @@
+.weekend-task-container {
+  width: 100%;
+  padding: 25px 0;
+  margin: 50px 0px 0px 0px;
+  background-color: #fff;
+}
+
+.weekend-task {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.weekend-task-image {
+  width: 100%;
+  margin: 0 1% 0 1%;
+}
+
+.footer-container {
+  background-color: #f1f2f6;
+  border-top: 1px solid #e5e5e5;
+  padding: 3rem 0 1rem 0;
+}
+
+.footer-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 20%;
+}
+
+.footer-sub-section {
+  overflow: hidden;
+}
+
+.footer-section-heading {
+  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  text-align: left;
+}
+
+.footer-section-list {
+  font-weight: 600;
+  float: left;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.footer-section-item {
+  margin: 10px 0px;
+}
+
+.github-container {
+  width: 100%;
+}
+
+.github-image {
+  width: 50px;
+}
+
+.github-image:hover {
+  opacity: 0.8;
+}
+
+a:hover {
+  color: black;
+}
+
+
+@media only screen and (max-width: 780px) {
+  .footer-container {
+    display: none;
+  }
+}

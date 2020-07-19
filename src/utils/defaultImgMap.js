@@ -14,6 +14,8 @@ import calendar from '../assets/images/calendar.png';
 import percent from '../assets/images/percent.png';
 import parcel from '../assets/images/parcel.png';
 import arrow from '../assets/images/arrow.png';
+import weekend from '../assets/images/weekend.png';
+import github from '../assets/images/github.png';
 
 let imgs = {
     bahco20,
@@ -31,7 +33,9 @@ let imgs = {
     parcel,
     signin,
     basket,
-    arrow
+    arrow,
+    weekend,
+    github
 };
 
 function getImage(key) {
