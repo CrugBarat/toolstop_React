@@ -6,6 +6,9 @@ export default function Home() {
   return (
     <Fragment>
       <Header />
+      <div className="home-container">
+
+      </div>
       <Footer />
     </Fragment>
   )

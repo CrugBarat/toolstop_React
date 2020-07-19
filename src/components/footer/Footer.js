@@ -113,11 +113,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="github-container">
-          <a href="https://github.com/CrugBarat/toolstop_React">
-            <img className="github-image" src={getImage("github")} alt=""/>
-          </a>
-        </div>
+      </div>
+      <div className="github-container">
+        <a href="https://github.com/CrugBarat/toolstop_React">
+          <img className="github-image" src={getImage("github")} alt=""/>
+        </a>
       </div>
     </Fragment>
   )
