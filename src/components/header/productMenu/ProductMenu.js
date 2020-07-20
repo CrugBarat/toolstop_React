@@ -22,7 +22,7 @@ const ProductMenu = () => {
             <li>BRANDS</li>
           </a>
           <a className="product-link" href="https://www.toolstop.co.uk/clearance/">
-            <li>CLEARNACE</li>
+            <li>CLEARANCE</li>
           </a>
           <a className="product-link" href="https://www.toolstop.co.uk/special-offers/">
             <li>SPECIAL OFFERS</li>
