@@ -1,3 +1,5 @@
+<img src="https://github.com/CrugBarat/my_files/blob/master/toolstop/toolstop1.png" height="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/toolstop/toolstop2.png" height="300">
+
 # Toolstop
 
 A 3 day coding challenge assigned to me by Toolstop while applying for a job with them.
@@ -7,6 +9,12 @@ A 3 day coding challenge assigned to me by Toolstop while applying for a job wit
 **Web App Framework**: React
 
 **Markup/Styling**: HTML5/CSS3
+
+**Task**: [ToolstopTask](https://github.com/CrugBarat/my_files/blob/master/toolstop/ToolstopTask.pdf)
+
+**Assets**: [ToolstopAssets](https://github.com/CrugBarat/my_files/blob/master/toolstop/ToolstopAssets.pdf)
+
+**Demo**: [Heroku App](https://toolstop-top40.herokuapp.com/)
 
 ---
 
