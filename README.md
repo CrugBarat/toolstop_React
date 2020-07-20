@@ -2,7 +2,7 @@
 
 # Toolstop
 
-A 3 day coding challenge assigned to me by Toolstop while applying for a job with them.
+A 3 day coding challenge assigned to me by Toolstop, which resulted in a job offer.
 
 **Programming Language**: JavaScript
 
